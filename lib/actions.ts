@@ -1,4 +1,5 @@
 "use server";
+declare module 'nodemailer';
 
 import {
     EmailTemplateForUser
