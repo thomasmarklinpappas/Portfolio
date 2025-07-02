@@ -8,7 +8,7 @@ import { Suspense } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_CURRENT_SITE_URL as string),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_CURRENT_SITE_URL || 'https://thomas-marklin-pappas-portfolio.vercel.app/'),
   openGraph: {
     type: "website",
     locale: "en_US",
