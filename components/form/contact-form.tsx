@@ -170,7 +170,7 @@ export function ContactForm({ className, currentEmail }: Props) {
                 <Textarea
                     rows={3}
                     id="message"
-                    placeholder="Looking for a proficient software developer skilled in C# and Angular for a specific project"
+                    placeholder="Looking for a proficient software developer skilled in C# and Angular for a specific project."
                     className="resize-none"
                     value={state.message}
                     onChange={handleInputChange}
