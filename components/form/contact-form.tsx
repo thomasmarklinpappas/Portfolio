@@ -4,7 +4,6 @@ import { Label, Input, Textarea, LabelInputContainer } from "./";
 import { IoSendSharp } from "react-icons/io5";
 import { useReducer, useState } from "react";
 import { sendMail } from "@/lib/actions";
-import { MagicButton } from "../animations";
 
 interface Props {
     className?: string;
@@ -23,8 +22,11 @@ interface FormData {
     };
 }
 
+/* eslint-disable-next-line no-unused-vars */
 enum ActionTypes {
+    /* eslint-disable-next-line no-unused-vars */
     UPDATE_STATE = "UPDATE_STATE",
+    /* eslint-disable-next-line no-unused-vars */
     RESET_STATE = "RESET_STATE",
 }
 
@@ -205,15 +207,6 @@ export function ContactForm({ className, currentEmail }: Props) {
         </form>
     );
 }
-
-const BottomGradient = () => {
-    return (
-        <>
-            <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-            <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-        </>
-    );
-};
 
 const LoadingIcon = () => {
     return (

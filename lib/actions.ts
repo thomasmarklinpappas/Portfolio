@@ -1,8 +1,7 @@
 "use server";
 
 import {
-    EmailTemplateForUser,
-    EmailTemplateForAdmin,
+    EmailTemplateForUser
 } from "@/components/email-templates";
 import nodemailer from 'nodemailer';
 import { render } from '@react-email/components';

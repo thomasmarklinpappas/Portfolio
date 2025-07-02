@@ -18,7 +18,7 @@ export function MotionUp({
                 y: 100,
             }}
             transition={{
-                delay: delay,
+                delay,
                 duration: 1,
                 ease: [0.4, 0.0, 0.2, 1],
             }}

@@ -93,7 +93,7 @@ function PinContainer({
         >
           <div
             style={{
-              transform: transform,
+              transform,
             }}
             className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-slate-950 border border-white/[0.2] group-hover/pin:border-white/[0.5] transition duration-700 overflow-hidden w-[20rem]  sm:w-[21rem]"
           >

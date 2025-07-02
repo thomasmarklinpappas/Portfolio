@@ -17,7 +17,6 @@ import Link from "next/link";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { Heading } from "../";
 import { Project } from "@/lib/types";
-import { sortByPriority } from "@/lib/utils";
 
 interface Props {
     projects: Project[];

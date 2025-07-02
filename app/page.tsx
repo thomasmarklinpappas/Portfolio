@@ -211,13 +211,6 @@ export default async function page() {
       techStack: ["Next.js", "TypeScript"],
       liveUrl: "https://www.freeaihub.cloud/",
     }, {
-      title: "SnapLoom",
-      description: "SnapLoom is a free AI-powered image editor with tools for background removal, recoloring, aspect ratio resizing, and image generation. Transform your images effortlessly with SnapLoom, at no cost.",
-      images: ["/SnapLoom-1.webp", "/SnapLoom-2.webp", "/SnapLoom-3.webp"],
-      techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Supabase", "Vercel"],
-      priority: 1,
-      liveUrl: "https://www.snaploom.space/",
-    }, {
       title: "DOGE INU",
       description: "Calling all Dogecoin enthusiasts! DINU, a playful token built on the Dogechain platform, empowers you to unleash the full potential of the DOGE community. Dive into a world of creativity and possibility, fueled by the spirit of Dogecoin. DINU fosters a fun and engaging experience, making it the perfect way to celebrate your love for all things Doge. Whether you're a seasoned meme master or a curious newcomer, DINU welcomes you to join the pack and explore the exciting possibilities of Dogechain. So, unleash your inner Doge and discover the dynamic world of DINU! It was a freelance project from DOGE INU (A memecoin Cryptocurrency).",
       images: ["/DOGEINU-1.webp", "/DOGEINU-2.webp"],

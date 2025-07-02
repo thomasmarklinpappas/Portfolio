@@ -35,7 +35,7 @@ const MotionComponent = <T extends HTMLElement>({
             style={{
                 background: useMotionTemplate`
                     radial-gradient(
-                        ${visible ? radius + "px" : "0px"
+                        ${visible ? `${radius}px` : "0px"
                     } circle at ${mouseX}px ${mouseY}px,
                         var(--blue-500),
                         transparent 80%
