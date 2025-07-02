@@ -95,6 +95,11 @@ jobs:
     environment: production
     
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v25
       with:
