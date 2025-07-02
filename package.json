@@ -4,7 +4,7 @@
   "private": true,
   "author": {
     "name": "ThomasPappas",
-    "github": "https://github.com/abhishek1350"
+    "github": "https://github.com/thomasmarklinpappas"
   },
   "scripts": {
     "dev": "next dev",
