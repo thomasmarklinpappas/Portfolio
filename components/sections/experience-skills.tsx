@@ -13,11 +13,12 @@ function sortByStartDate(arr: WorkExperience[]): WorkExperience[] {
 
 interface Props {
     experiences: WorkExperience[];
+    education: WorkExperience[];
     skills: Skill[];
     certificates: Certificate[];
 }
 
-export function ExperienceSkills({ experiences, skills, certificates }: Props) {
+export function ExperienceSkills({ experiences, education, skills, certificates }: Props) {
     const sortedExperiences = sortByStartDate(experiences);
 
     return (
@@ -27,13 +28,19 @@ export function ExperienceSkills({ experiences, skills, certificates }: Props) {
                     <Heading text="Career History" />
                     <Timeline data={sortedExperiences} />
                 </MotionUp>
+                
+                <br /><br/>
+                <MotionUp delay={0.1}>
+                    <Heading text="Education" />
+                    <Timeline data={education} />
+                </MotionUp>
 
                 <MotionUp className="mt-10 p-0 py-10 rounded-lg" delay={0.1}>
-                    <Heading text="Expertise" />
+                    <Heading text="Skills" />
                     <div className="flex flex-wrap justify-center gap-4 mt-6">
                         {skills.map((skill, index) => (
                             <MagicCard
-                                className="hover:scale-105 transition-all duration-500 w-40 h-40 flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl"
+                                className="hover:scale-105 transition-all duration-500 w-20 h-20 md:w-40 md:h-40 flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:text-4xl"
                                 gradientColor="#3b82f6"
                                 key={index}
                             >
@@ -43,9 +50,9 @@ export function ExperienceSkills({ experiences, skills, certificates }: Props) {
                                         alt={skill.name}
                                         width={80}
                                         height={80}
-                                        className="h-16 w-16 rounded-full object-cover border border-border bg-white"
+                                        className="h-12 w-12 md:h-16 md:w-16 rounded-full object-cover border border-border bg-white"
                                     />
-                                    <h6 className="text-center text-lg font-bold text-foreground">
+                                    <h6 className="text-center text-sm md:text-lg font-bold text-foreground">
                                         {skill.url ? (
                                             <Link
                                                 target="_blank"

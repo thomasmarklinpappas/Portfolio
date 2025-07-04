@@ -55,12 +55,13 @@ export default async function page() {
       companyLogo: "/intel.jpg",
       startDate: "Jun 2014",
       endDate: "Feb 2015",
-    }, {
-      position: "Bachelor's degree in Computer Science",
+    }],
+    education: [{
+      position: "Bachelor of Science in Computer Science",
       jobDescription: "",
-      companyName: "Florida National University",
-      companyUrl: "https://www.fnu.edu/",
-      companyLogo: "/floridanationaluniversity_logo.jpg",
+      companyName: "University of Florida",
+      companyUrl: "https://www.ufl.edu/",
+      companyLogo: "/universityofflorida.png",
       startDate: "Sep 2010",
       endDate: "May 2014",
     }],
@@ -266,6 +267,7 @@ export default async function page() {
       <Hero data={data.personalInfo} />
       <ExperienceSkills
         experiences={data.workExperience}
+        education={data.education}
         skills={data.skills}
         certificates={data.certificates}
       />

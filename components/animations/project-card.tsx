@@ -26,7 +26,7 @@ export function ProjectCard({ data }: Props) {
       onClick={handleSetModalContent}
       className="!w-full flex justify-center h-[360px]"
     >
-      <div className="tracking-tight text-foreground">
+      <div className="tracking-tight text-black dark:text-foreground">
         <Image
           src={data.images[0]}
           alt={data.title}
@@ -34,11 +34,11 @@ export function ProjectCard({ data }: Props) {
           width={500}
           className="rounded-lg h-[180px] max-w-full mb-5"
         />
-        <h3 className="line-clamp-1 max-w-xs !pb-2 !m-0 font-bold  text-base text-foreground">
+        <h3 className="line-clamp-1 max-w-xs !pb-2 !m-0 font-bold  text-base text-black dark:text-foreground">
           {data.title}
         </h3>
         <div className="text-base !m-0 !p-0 font-normal">
-          <p className="text-slate-400 line-clamp-4 ">{data.description}</p>
+          <p className="text-slate-600 dark:text-slate-400 line-clamp-4 ">{data.description}</p>
         </div>
       </div>
     </PinContainer>
@@ -95,7 +95,7 @@ function PinContainer({
             style={{
               transform,
             }}
-            className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-slate-950 border border-white/[0.2] group-hover/pin:border-white/[0.5] transition duration-700 overflow-hidden w-[20rem]  sm:w-[21rem]"
+            className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-white dark:bg-slate-950 border border-slate-200 dark:border-white/[0.2] group-hover/pin:border-slate-300 dark:group-hover/pin:border-white/[0.5] transition duration-700 overflow-hidden w-[20rem]  sm:w-[21rem]"
           >
             <div
               className={cn(" relative z-50 w-[19rem] sm:w-[20rem]", className)}
